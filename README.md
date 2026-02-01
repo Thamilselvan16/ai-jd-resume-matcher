@@ -19,3 +19,8 @@ def extract_jd_skills(jd_text):
             extracted_skills.append(skill)
 
     return extracted_skills
+
+## Future Enhancements
+- Integrate Generative AI for semantic skill extraction
+- Improve matching using LLM-based similarity scoring
+- Extend system for interview scheduling and analytics
