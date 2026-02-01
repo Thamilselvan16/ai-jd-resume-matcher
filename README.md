@@ -26,15 +26,8 @@ def extract_jd_skills(jd_text):
     """
     resume_text = resume_text.lower()
 
-    known_skills = [
-        "python", "sql", "pandas",
-        "apis", "java", "excel"
-    ]
-
-    resume_skills = []
-    for skill in known_skills:
-        if skill in resume_text:
-            resume_skills.append(skill)
+    known_skills = ["python", "sql", "pandas", "apis", "java", "excel"]
+    resume_skills = [skill for skill in known_skills if skill in resume_text]
 
     return resume_skills
 
